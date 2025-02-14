@@ -12,6 +12,7 @@ const Navbar = () => {
           <span>Spotter</span>
         </div>
 
+        {/* Desktop & Mobile Navigation */}
         <div className={`navbar-links ${isMenuOpen ? "active" : ""}`}>
           <a href="#product">Solutions</a>
           <a href="#use-cases">Platform</a>
@@ -27,6 +28,7 @@ const Navbar = () => {
         <button
           className="mobile-menu"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
+          aria-label="Toggle menu"
         >
           <span></span>
           <span></span>

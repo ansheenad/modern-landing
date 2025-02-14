@@ -1,0 +1,45 @@
+/* src/components/layout/MobileMenu.css */
+.mobile-menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4px);
+    z-index: 998;
+  }
+  
+  .mobile-menu-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 80%;
+    max-width: 400px;
+    background: white;
+    z-index: 999;
+    padding: 2rem;
+    box-shadow: -2px 0 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .mobile-menu-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+  
+  .mobile-menu-nav a {
+    color: var(--text-dark);
+    text-decoration: none;
+    font-size: 1.25rem;
+    padding: 0.5rem 0;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease;
+  }
+  
+  .mobile-menu-nav a:hover {
+    color: var(--primary-color);
+    border-bottom-color: var(--primary-color);
+  }

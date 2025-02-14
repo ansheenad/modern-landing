@@ -1,4 +1,3 @@
-// src/components/sections/Hero.jsx
 import React from "react";
 import Graph from "./Graph";
 import FeatureCard from "./FeatureCard";

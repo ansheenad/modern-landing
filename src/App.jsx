@@ -6,16 +6,15 @@ import ScrollToTop from "./components/ui/ScrollToTop";
 import Footer from "./components/Footer";
 import CardContainer from "./components/CardContainer";
 
-
 function App() {
     return (
         <div>
             <Navbar />
             <Hero />
-            <Footer/>
-            <HelpWidget/>
-            <ScrollToTop/>
-            <CardContainer/>
+            <Footer />
+            <HelpWidget />
+            <ScrollToTop />
+            <CardContainer />
         </div>
     );
 }

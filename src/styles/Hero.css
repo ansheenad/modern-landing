@@ -1,7 +1,5 @@
-/* src/styles/Hero.css */
 .hero {
   padding: 4rem 3rem;
-   
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -11,6 +9,7 @@
 
 .hero-container {
   max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -20,15 +19,49 @@
   gap: 2rem;
 }
 
+/* Graph Container */
 .hero-graph {
   background: #fff;
   border-radius: 8px;
   padding: 1rem;
   box-shadow: var(--shadow);
+  width: 100%; /* Ensure it does not overflow */
 }
 
+/* Features Section */
 .hero-features {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-content {
+    grid-template-columns: 1fr; /* Stack graph and features */
+    text-align: center;
+  }
+
+  .hero-graph {
+    width: 100%; /* Make sure graph fits */
+    padding: 0.5rem;
+  }
+
+  .hero-features {
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 2rem 1rem;
+  }
+
+  .hero-content {
+    gap: 1rem;
+  }
+
+  .hero-graph {
+    padding: 0.5rem;
+  }
 }

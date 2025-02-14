@@ -4,6 +4,12 @@
   --text-light: #666666;
   --background: #FFFFFF;
   --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  --padding-small: 1rem;
+  --padding-medium: 2rem;
+  --padding-large: 3rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.25rem;
+  --font-size-xl: 1.5rem;
 }
 
 * {

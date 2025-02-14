@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import '../styles/Navbar.css';
+import { useState } from "react";
+import "../styles/Navbar.css";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -8,11 +8,11 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="navbar-container">
         <div className="navbar-logo">
-          <img src="public\logo.png" alt="spotter" />
+          <img src="/logo.png" alt="Spotter Logo" />
           <span>Spotter</span>
         </div>
 
-        <div className={`navbar-links ${isMenuOpen ? 'active' : ''}`}>
+        <div className={`navbar-links ${isMenuOpen ? "active" : ""}`}>
           <a href="#product">Solutions</a>
           <a href="#use-cases">Platform</a>
           <a href="#developers">Resources</a>
@@ -24,8 +24,8 @@ const Navbar = () => {
           <button className="btn-start">Contact Us</button>
         </div>
 
-        <button 
-          className="mobile-menu" 
+        <button
+          className="mobile-menu"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
           <span></span>
